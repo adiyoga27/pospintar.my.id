@@ -1,0 +1,80 @@
+[12-Mar-2025 10:47:03 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.4.7". You are running 7.1.33. in /home/posr7946/project/vendor/composer/platform_check.php on line 24
+[12-Mar-2025 09:17:23 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/posr7946/project/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/posr7946/project/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/posr7946/project/vendor/symfony/var-dumper/Dumper/CliDumper.php(573): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/posr7946/project/vendor/symfony/var-dumper/Dumper/CliDumper.php(263): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/posr7946/project/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'PHP's json exte...', false, 0)
+#4 /home/posr7946/project/vendor/symfony/var-dumper/Cloner/Data.php(420): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpString(Object(Symfony\Co in /home/posr7946/project/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[12-Mar-2025 09:17:26 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/posr7946/project/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/posr7946/project/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/posr7946/project/vendor/symfony/var-dumper/Dumper/CliDumper.php(573): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/posr7946/project/vendor/symfony/var-dumper/Dumper/CliDumper.php(263): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/posr7946/project/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'PHP's json exte...', false, 0)
+#4 /home/posr7946/project/vendor/symfony/var-dumper/Cloner/Data.php(420): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpString(Object(Symfony\Co in /home/posr7946/project/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[12-Mar-2025 09:18:14 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/posr7946/project/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/posr7946/project/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/posr7946/project/vendor/symfony/var-dumper/Dumper/CliDumper.php(573): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/posr7946/project/vendor/symfony/var-dumper/Dumper/CliDumper.php(263): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/posr7946/project/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'PHP's json exte...', false, 0)
+#4 /home/posr7946/project/vendor/symfony/var-dumper/Cloner/Data.php(420): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpString(Object(Symfony\Co in /home/posr7946/project/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[12-Mar-2025 09:18:19 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/posr7946/project/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/posr7946/project/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/posr7946/project/vendor/symfony/var-dumper/Dumper/CliDumper.php(573): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/posr7946/project/vendor/symfony/var-dumper/Dumper/CliDumper.php(263): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/posr7946/project/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'PHP's json exte...', false, 0)
+#4 /home/posr7946/project/vendor/symfony/var-dumper/Cloner/Data.php(420): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpString(Object(Symfony\Co in /home/posr7946/project/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[12-Mar-2025 09:18:20 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/posr7946/project/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/posr7946/project/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/posr7946/project/vendor/symfony/var-dumper/Dumper/CliDumper.php(573): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/posr7946/project/vendor/symfony/var-dumper/Dumper/CliDumper.php(263): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/posr7946/project/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'PHP's json exte...', false, 0)
+#4 /home/posr7946/project/vendor/symfony/var-dumper/Cloner/Data.php(420): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpString(Object(Symfony\Co in /home/posr7946/project/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[12-Mar-2025 09:18:20 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/posr7946/project/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/posr7946/project/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/posr7946/project/vendor/symfony/var-dumper/Dumper/CliDumper.php(573): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/posr7946/project/vendor/symfony/var-dumper/Dumper/CliDumper.php(263): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/posr7946/project/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'PHP's json exte...', false, 0)
+#4 /home/posr7946/project/vendor/symfony/var-dumper/Cloner/Data.php(420): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpString(Object(Symfony\Co in /home/posr7946/project/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[12-Jun-2025 19:49:59 Asia/Jakarta] PHP Notice:  Constant sodium\CRYPTO_BOX_SECRETKEYBYTES already defined in /home/posr7946/project/vendor/paragonie/sodium_compat/lib/constants.php on line 36
+[30-Sep-2025 04:30:52 Asia/Jakarta] PHP Notice:  Constant sodium\CRYPTO_BOX_SECRETKEYBYTES already defined in /home/posr7946/project/vendor/paragonie/sodium_compat/lib/constants.php on line 36
+[05-Mar-2026 00:33:56 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file, expecting '(' in /home/posr7946/project/public/index.php(11) : eval()'d code on line 38
+[05-Mar-2026 00:42:18 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file, expecting '(' in /home/posr7946/project/public/index.php(11) : eval()'d code on line 38
+[05-Mar-2026 01:26:14 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/posr7946/project/public/index.php(11) : eval()'d code on line 79
+[05-Mar-2026 01:27:13 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/posr7946/project/public/index.php(11) : eval()'d code on line 79
+[05-Mar-2026 01:31:38 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/posr7946/project/public/index.php(11) : eval()'d code on line 79
+[05-Mar-2026 01:33:47 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file, expecting '(' in /home/posr7946/project/public/index.php(11) : eval()'d code on line 38
+[05-Mar-2026 01:34:36 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/posr7946/project/public/index.php(11) : eval()'d code on line 105
+[05-Mar-2026 01:38:12 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file, expecting '(' in /home/posr7946/project/public/index.php(11) : eval()'d code on line 38
+[05-Mar-2026 01:40:04 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/posr7946/project/public/index.php(11) : eval()'d code on line 105
+[05-Mar-2026 01:43:10 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/posr7946/project/public/index.php(11) : eval()'d code on line 79
+[10-Mar-2026 04:02:05 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/posr7946/project/public/index.php(11) : eval()'d code on line 79
+[11-Mar-2026 01:00:58 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file, expecting '(' in /home/posr7946/project/public/index.php(11) : eval()'d code on line 38
+[11-Mar-2026 01:09:54 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/posr7946/project/public/index.php(11) : eval()'d code on line 105
+[11-Mar-2026 01:14:20 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file, expecting '(' in /home/posr7946/project/public/index.php(11) : eval()'d code on line 38
+[11-Mar-2026 01:24:11 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/posr7946/project/public/index.php(11) : eval()'d code on line 79
+[11-Mar-2026 01:27:00 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file, expecting '(' in /home/posr7946/project/public/index.php(11) : eval()'d code on line 38
+[11-Mar-2026 01:32:09 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/posr7946/project/public/index.php(11) : eval()'d code on line 79
+[11-Mar-2026 01:37:21 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/posr7946/project/public/index.php(11) : eval()'d code on line 79
+[11-Mar-2026 01:40:31 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/posr7946/project/public/index.php(11) : eval()'d code on line 79
+[11-Mar-2026 01:46:12 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/posr7946/project/public/index.php(11) : eval()'d code on line 79
+[11-Mar-2026 01:49:05 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/posr7946/project/public/index.php(11) : eval()'d code on line 79
+[11-Mar-2026 01:50:14 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file, expecting '(' in /home/posr7946/project/public/index.php(11) : eval()'d code on line 38
+[11-Mar-2026 01:50:59 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/posr7946/project/public/index.php(11) : eval()'d code on line 105
+[11-Mar-2026 01:52:10 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/posr7946/project/public/index.php(11) : eval()'d code on line 79
+[11-Mar-2026 01:53:20 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/posr7946/project/public/index.php(11) : eval()'d code on line 79
+[11-Mar-2026 01:54:14 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/posr7946/project/public/index.php(11) : eval()'d code on line 79
+[11-Mar-2026 01:55:26 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file, expecting '(' in /home/posr7946/project/public/index.php(11) : eval()'d code on line 38
+[11-Mar-2026 01:55:48 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file, expecting '(' in /home/posr7946/project/public/index.php(11) : eval()'d code on line 38
+[11-Mar-2026 01:57:00 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/posr7946/project/public/index.php(11) : eval()'d code on line 79
+[11-Mar-2026 01:58:26 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file, expecting '(' in /home/posr7946/project/public/index.php(11) : eval()'d code on line 38
+[11-Mar-2026 02:01:59 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file, expecting '(' in /home/posr7946/project/public/index.php(11) : eval()'d code on line 38
+[11-Mar-2026 02:05:43 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/posr7946/project/public/index.php(11) : eval()'d code on line 79
+[11-Mar-2026 02:05:43 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/posr7946/project/public/index.php(11) : eval()'d code on line 79
+[11-Mar-2026 02:06:57 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/posr7946/project/public/index.php(11) : eval()'d code on line 79
+[11-Mar-2026 02:08:00 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/posr7946/project/public/index.php(11) : eval()'d code on line 79
