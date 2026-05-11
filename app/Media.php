@@ -121,6 +121,14 @@ class Media extends Model
     public static function uploadFile($file)
     {
         $file_name = null;
+
+        $allowed_extensions = ['jpg', 'jpeg', 'png', 'gif', 'webp', 'pdf', 'doc', 'docx', 'xls', 'xlsx', 'csv', 'txt', 'zip'];
+        $ext = strtolower($file->getClientOriginalExtension());
+
+        if (!in_array($ext, $allowed_extensions)) {
+            return null;
+        }
+
         if ($file->getSize() <= config('constants.document_size_limit')) {
             $new_file_name = time() . '_' . mt_rand() . '_' . $file->getClientOriginalName();
             if ($file->storeAs('/media', $new_file_name)) {

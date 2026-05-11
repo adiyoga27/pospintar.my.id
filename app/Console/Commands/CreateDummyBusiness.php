@@ -86,7 +86,7 @@ class CreateDummyBusiness extends Command
         $moduleUtil->getModuleData('dummy_data');
         
         if (config('app.env') == 'demo') {
-            system('chmod 777 -R /var/www/pos/storage');
+            chmod(storage_path(), 0755);
         }
 
         DB::commit();
