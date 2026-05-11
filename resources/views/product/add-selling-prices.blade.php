@@ -11,7 +11,7 @@
 <!-- Main content -->
 <section class="content">
 	{!! Form::open(['url' => action('ProductController@saveSellingPrices'), 'method' => 'post', 'id' => 'selling_price_form' ]) !!}
-	{!! Form::hidden('product_id', $product->id); !!}
+	{!! Form::hidden('product_id', $product->id) !!}
 	<div class="row">
 		<div class="col-xs-12">
 		<div class="box box-solid">
@@ -47,7 +47,7 @@
 										<td><span class="display_currency" data-currency_symbol="true">{{$variation->sell_price_inc_tax}}</span></td>
 											@foreach($price_groups as $price_group)
 												<td>
-													{!! Form::text('group_prices[' . $price_group->id . '][' . $variation->id . ']', !empty($variation_prices[$variation->id][$price_group->id]) ? @num_format($variation_prices[$variation->id][$price_group->id]) : 0, ['class' => 'form-control input_number input-sm'] ); !!}
+													{!! Form::text('group_prices[' . $price_group->id . '][' . $variation->id . ']', !empty($variation_prices[$variation->id][$price_group->id]) ? @num_format($variation_prices[$variation->id][$price_group->id]) : 0, ['class' => 'form-control input_number input-sm'] ) !!}
 												</td>
 											@endforeach
 										</tr>
@@ -63,7 +63,7 @@
 	</div>
 	<div class="row">
 		<div class="col-sm-12">
-			{!! Form::hidden('submit_type', 'save', ['id' => 'submit_type']); !!}
+			{!! Form::hidden('submit_type', 'save', ['id' => 'submit_type']) !!}
 			<div class="text-center">
       			<div class="btn-group">
 					<button id="opening_stock_button" @if($product->enable_stock == 0) disabled @endif type="submit" value="submit_n_add_opening_stock" class="btn bg-purple submit_form">@lang('lang_v1.save_n_add_opening_stock')</button>

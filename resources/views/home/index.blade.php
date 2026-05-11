@@ -15,7 +15,7 @@
     	<div class="row">
             <div class="col-md-4 col-xs-12">
               @if(count($all_locations) > 1)
-                {!! Form::select('dashboard_location', $all_locations, null, ['class' => 'form-control select2', 'placeholder' => __('lang_v1.select_location'), 'id' => 'dashboard_location']); !!}
+                {!! Form::select('dashboard_location', $all_locations, null, ['class' => 'form-control select2', 'placeholder' => __('lang_v1.select_location'), 'id' => 'dashboard_location']) !!}
               @endif
             </div>
     		<div class="col-md-8 col-xs-12">

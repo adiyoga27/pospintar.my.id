@@ -49,7 +49,7 @@
                         <td colspan="11">
                         <div style="display: flex; width: 100%;">
                             {!! Form::open(['url' => action('DiscountController@massDeactivate'), 'method' => 'post', 'id' => 'mass_deactivate_form' ]) !!}
-                            {!! Form::hidden('selected_discounts', null, ['id' => 'selected_discounts']); !!}
+                            {!! Form::hidden('selected_discounts', null, ['id' => 'selected_discounts']) !!}
                             {!! Form::submit(__('lang_v1.deactivate_selected'), array('class' => 'btn btn-xs btn-warning', 'id' => 'deactivate-selected')) !!}
                             {!! Form::close() !!}
                             </div>

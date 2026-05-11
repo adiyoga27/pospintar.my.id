@@ -19,7 +19,7 @@
                     <div class="checkbox">
                         <label>
                           {!! Form::checkbox('only_woocommerce_sells', 1, false, 
-                          [ 'class' => 'input-icheck', 'id' => 'synced_from_woocommerce']); !!} {{ __('lang_v1.synced_from_woocommerce') }}
+                          [ 'class' => 'input-icheck', 'id' => 'synced_from_woocommerce']) !!} {{ __('lang_v1.synced_from_woocommerce') }}
                         </label>
                     </div>
                 </div>

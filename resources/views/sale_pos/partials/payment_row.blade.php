@@ -9,7 +9,7 @@
         @endif
 
         @if(!empty($payment_line['id']))
-        	{!! Form::hidden("payment[$row_index][payment_id]", $payment_line['id']); !!}
+        	{!! Form::hidden("payment[$row_index][payment_id]", $payment_line['id']) !!}
         @endif
 
 		<div class="box-body" >

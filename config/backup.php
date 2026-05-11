@@ -36,6 +36,10 @@ return [
                  * Determines if symlinks should be followed.
                  */
                 'followLinks' => false,
+
+                'ignoreUnreadableDirectories' => false,
+
+                'relative_path' => null,
             ],
 
             /*
@@ -93,7 +97,7 @@ return [
         'notifiable' => \Spatie\Backup\Notifications\Notifiable::class,
 
         'mail' => [
-            'to' => null,
+            'to' => env('BACKUP_MAIL_TO', 'admin@example.com'),
         ],
 
         'slack' => [

@@ -15,33 +15,33 @@
         <div class="col-md-3">
             <div class="form-group">
                 {!! Form::label('po_list_filter_location_id',  __('purchase.business_location') . ':') !!}
-                {!! Form::select('po_list_filter_location_id', $business_locations, null, ['class' => 'form-control select2', 'style' => 'width:100%', 'placeholder' => __('lang_v1.all')]); !!}
+                {!! Form::select('po_list_filter_location_id', $business_locations, null, ['class' => 'form-control select2', 'style' => 'width:100%', 'placeholder' => __('lang_v1.all')]) !!}
             </div>
         </div>
         <div class="col-md-3">
             <div class="form-group">
                 {!! Form::label('po_list_filter_supplier_id',  __('purchase.supplier') . ':') !!}
-                {!! Form::select('po_list_filter_supplier_id', $suppliers, null, ['class' => 'form-control select2', 'style' => 'width:100%', 'placeholder' => __('lang_v1.all')]); !!}
+                {!! Form::select('po_list_filter_supplier_id', $suppliers, null, ['class' => 'form-control select2', 'style' => 'width:100%', 'placeholder' => __('lang_v1.all')]) !!}
             </div>
         </div>
         <div class="col-md-3">
             <div class="form-group">
                 {!! Form::label('po_list_filter_status',  __('sale.status') . ':') !!}
-                {!! Form::select('po_list_filter_status', $purchaseOrderStatuses, null, ['class' => 'form-control select2', 'style' => 'width:100%', 'placeholder' => __('lang_v1.all')]); !!}
+                {!! Form::select('po_list_filter_status', $purchaseOrderStatuses, null, ['class' => 'form-control select2', 'style' => 'width:100%', 'placeholder' => __('lang_v1.all')]) !!}
             </div>
         </div>
         @if(!empty($shipping_statuses))
             <div class="col-md-3">
                 <div class="form-group">
                     {!! Form::label('shipping_status', __('lang_v1.shipping_status') . ':') !!}
-                    {!! Form::select('shipping_status', $shipping_statuses, null, ['class' => 'form-control select2', 'style' => 'width:100%', 'placeholder' => __('lang_v1.all')]); !!}
+                    {!! Form::select('shipping_status', $shipping_statuses, null, ['class' => 'form-control select2', 'style' => 'width:100%', 'placeholder' => __('lang_v1.all')]) !!}
                 </div>
             </div>
         @endif
         <div class="col-md-3">
             <div class="form-group">
                 {!! Form::label('po_list_filter_date_range', __('report.date_range') . ':') !!}
-                {!! Form::text('po_list_filter_date_range', null, ['placeholder' => __('lang_v1.select_a_date_range'), 'class' => 'form-control', 'readonly']); !!}
+                {!! Form::text('po_list_filter_date_range', null, ['placeholder' => __('lang_v1.select_a_date_range'), 'class' => 'form-control', 'readonly']) !!}
             </div>
         </div>
     @endcomponent

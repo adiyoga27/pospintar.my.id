@@ -405,18 +405,15 @@ class Util
           return false;
         }
 
-        Config::set('nexmo.api_key', $sms_settings['nexmo_key']);
-        Config::set('nexmo.api_secret', $sms_settings['nexmo_secret']);
+        $basic  = new \Vonage\Client\Credentials\Basic($sms_settings['nexmo_key'], $sms_settings['nexmo_secret']);
+        $client = new \Vonage\Client($basic);
 
-        $nexmo = app('Nexmo\Client');
         $numbers = explode(',', trim($data['mobile_number']));
 
         foreach ($numbers as $number) {
-            $nexmo->message()->send([
-                'to'   => $number,
-                'from' => $sms_settings['nexmo_from'],
-                'text' => $data['sms_body']
-            ]);
+            $client->sms()->send(
+                new \Vonage\SMS\Message\SMS($number, $sms_settings['nexmo_from'], $data['sms_body'])
+            );
         }
     }
 
@@ -924,7 +921,7 @@ class Util
     {
         $is_mail_configured = false;
 
-        if (!empty(env('MAIL_DRIVER')) &&
+        if (!empty(env('MAIL_MAILER')) &&
             !empty(env('MAIL_HOST')) &&
             !empty(env('MAIL_PORT')) &&
             !empty(env('MAIL_USERNAME')) &&

@@ -18,26 +18,26 @@
             <div class="col-md-2">
                 <div class="form-group">
                   {!! Form::label('surname', __( 'business.prefix' ) . ':') !!}
-                    {!! Form::text('surname', $user->surname, ['class' => 'form-control', 'placeholder' => __( 'business.prefix_placeholder' ) ]); !!}
+                    {!! Form::text('surname', $user->surname, ['class' => 'form-control', 'placeholder' => __( 'business.prefix_placeholder' ) ]) !!}
                 </div>
             </div>
             <div class="col-md-5">
                 <div class="form-group">
                   {!! Form::label('first_name', __( 'business.first_name' ) . ':*') !!}
-                    {!! Form::text('first_name', $user->first_name, ['class' => 'form-control', 'required', 'placeholder' => __( 'business.first_name' ) ]); !!}
+                    {!! Form::text('first_name', $user->first_name, ['class' => 'form-control', 'required', 'placeholder' => __( 'business.first_name' ) ]) !!}
                 </div>
             </div>
             <div class="col-md-5">
                 <div class="form-group">
                   {!! Form::label('last_name', __( 'business.last_name' ) . ':') !!}
-                    {!! Form::text('last_name', $user->last_name, ['class' => 'form-control', 'placeholder' => __( 'business.last_name' ) ]); !!}
+                    {!! Form::text('last_name', $user->last_name, ['class' => 'form-control', 'placeholder' => __( 'business.last_name' ) ]) !!}
                 </div>
             </div>
             <div class="clearfix"></div>
             <div class="col-md-4">
                 <div class="form-group">
                   {!! Form::label('email', __( 'business.email' ) . ':*') !!}
-                    {!! Form::text('email', $user->email, ['class' => 'form-control', 'required', 'placeholder' => __( 'business.email' ) ]); !!}
+                    {!! Form::text('email', $user->email, ['class' => 'form-control', 'required', 'placeholder' => __( 'business.email' ) ]) !!}
                 </div>
             </div>
 
@@ -46,7 +46,7 @@
                   <div class="checkbox">
                     <br>
                     <label>
-                         {!! Form::checkbox('is_active', $user->status, $is_checked_checkbox, ['class' => 'input-icheck status']); !!} {{ __('lang_v1.status_for_user') }}
+                         {!! Form::checkbox('is_active', $user->status, $is_checked_checkbox, ['class' => 'input-icheck status']) !!} {{ __('lang_v1.status_for_user') }}
                     </label>
                     @show_tooltip(__('lang_v1.tooltip_enable_user_active'))
                   </div>
@@ -62,7 +62,7 @@
                     <div class="checkbox">
                       <label>
                         {!! Form::checkbox('allow_login', 1, !empty($user->allow_login), 
-                        [ 'class' => 'input-icheck', 'id' => 'allow_login']); !!} {{ __( 'lang_v1.allow_login' ) }}
+                        [ 'class' => 'input-icheck', 'id' => 'allow_login']) !!} {{ __( 'lang_v1.allow_login' ) }}
                       </label>
                     </div>
                 </div>
@@ -75,12 +75,12 @@
                       {!! Form::label('username', __( 'business.username' ) . ':') !!}
                       @if(!empty($username_ext))
                         <div class="input-group">
-                          {!! Form::text('username', null, ['class' => 'form-control', 'placeholder' => __( 'business.username' ) ]); !!}
+                          {!! Form::text('username', null, ['class' => 'form-control', 'placeholder' => __( 'business.username' ) ]) !!}
                           <span class="input-group-addon">{{$username_ext}}</span>
                         </div>
                         <p class="help-block" id="show_username"></p>
                       @else
-                          {!! Form::text('username', null, ['class' => 'form-control', 'placeholder' => __( 'business.username' ) ]); !!}
+                          {!! Form::text('username', null, ['class' => 'form-control', 'placeholder' => __( 'business.username' ) ]) !!}
                       @endif
                       <p class="help-block">@lang('lang_v1.username_help')</p>
                     </div>
@@ -89,14 +89,14 @@
             <div class="col-md-4">
                 <div class="form-group">
                   {!! Form::label('password', __( 'business.password' ) . ':') !!}
-                    {!! Form::password('password', ['class' => 'form-control', 'placeholder' => __( 'business.password'), 'required' => empty($user->allow_login) ? true : false ]); !!}
+                    {!! Form::password('password', ['class' => 'form-control', 'placeholder' => __( 'business.password'), 'required' => empty($user->allow_login) ? true : false ]) !!}
                     <p class="help-block">@lang('user.leave_password_blank')</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="form-group">
                   {!! Form::label('confirm_password', __( 'business.confirm_password' ) . ':') !!}
-                    {!! Form::password('confirm_password', ['class' => 'form-control', 'placeholder' => __( 'business.confirm_password' ), 'required' => empty($user->allow_login) ? true : false ]); !!}
+                    {!! Form::password('confirm_password', ['class' => 'form-control', 'placeholder' => __( 'business.confirm_password' ), 'required' => empty($user->allow_login) ? true : false ]) !!}
                   
                 </div>
             </div>
@@ -105,7 +105,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                   {!! Form::label('role', __( 'user.role' ) . ':*') !!} @show_tooltip(__('lang_v1.admin_role_location_permission_help'))
-                    {!! Form::select('role', $roles, !empty($user->roles->first()->id) ? $user->roles->first()->id : null, ['class' => 'form-control select2', 'style' => 'width: 100%;']); !!}
+                    {!! Form::select('role', $roles, !empty($user->roles->first()->id) ? $user->roles->first()->id : null, ['class' => 'form-control select2', 'style' => 'width: 100%;']) !!}
                 </div>
             </div>
             <div class="clearfix"></div>
@@ -117,7 +117,7 @@
                     <div class="checkbox">
                         <label>
                           {!! Form::checkbox('access_all_locations', 'access_all_locations', !is_array($permitted_locations) && $permitted_locations == 'all', 
-                        [ 'class' => 'input-icheck']); !!} {{ __( 'role.all_locations' ) }} 
+                        [ 'class' => 'input-icheck']) !!} {{ __( 'role.all_locations' ) }} 
                         </label>
                         @show_tooltip(__('tooltip.all_location_permission'))
                     </div>
@@ -127,7 +127,7 @@
                     <div class="checkbox">
                       <label>
                         {!! Form::checkbox('location_permissions[]', 'location.' . $location->id, is_array($permitted_locations) && in_array($location->id, $permitted_locations), 
-                        [ 'class' => 'input-icheck']); !!} {{ $location->name }}
+                        [ 'class' => 'input-icheck']) !!} {{ $location->name }}
                       </label>
                     </div>
                 </div>
@@ -142,14 +142,14 @@
             <div class="col-md-4">
                 <div class="form-group">
                   {!! Form::label('cmmsn_percent', __( 'lang_v1.cmmsn_percent' ) . ':') !!} @show_tooltip(__('lang_v1.commsn_percent_help'))
-                    {!! Form::text('cmmsn_percent', !empty($user->cmmsn_percent) ? @num_format($user->cmmsn_percent) : 0, ['class' => 'form-control input_number', 'placeholder' => __( 'lang_v1.cmmsn_percent' )]); !!}
+                    {!! Form::text('cmmsn_percent', !empty($user->cmmsn_percent) ? @num_format($user->cmmsn_percent) : 0, ['class' => 'form-control input_number', 'placeholder' => __( 'lang_v1.cmmsn_percent' )]) !!}
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="form-group">
                   {!! Form::label('max_sales_discount_percent', __( 'lang_v1.max_sales_discount_percent' ) . ':') !!} @show_tooltip(__('lang_v1.max_sales_discount_percent_help'))
-                    {!! Form::text('max_sales_discount_percent', !is_null($user->max_sales_discount_percent) ? @num_format($user->max_sales_discount_percent) : null, ['class' => 'form-control input_number', 'placeholder' => __( 'lang_v1.max_sales_discount_percent' ) ]); !!}
+                    {!! Form::text('max_sales_discount_percent', !is_null($user->max_sales_discount_percent) ? @num_format($user->max_sales_discount_percent) : null, ['class' => 'form-control input_number', 'placeholder' => __( 'lang_v1.max_sales_discount_percent' ) ]) !!}
                 </div>
             </div>
             <div class="clearfix"></div>
@@ -160,7 +160,7 @@
                       <label>
                         {!! Form::checkbox('selected_contacts', 1, 
                         $user->selected_contacts, 
-                        [ 'class' => 'input-icheck', 'id' => 'selected_contacts']); !!} {{ __( 'lang_v1.allow_selected_contacts' ) }}
+                        [ 'class' => 'input-icheck', 'id' => 'selected_contacts']) !!} {{ __( 'lang_v1.allow_selected_contacts' ) }}
                       </label>
                       @show_tooltip(__('lang_v1.allow_selected_contacts_tooltip'))
                     </div>
@@ -171,7 +171,7 @@
                 <div class="form-group">
                   {!! Form::label('selected_contacts', __('lang_v1.selected_contacts') . ':') !!}
                     <div class="form-group">
-                      {!! Form::select('selected_contact_ids[]', $contacts, $contact_access, ['class' => 'form-control select2', 'multiple', 'style' => 'width: 100%;' ]); !!}
+                      {!! Form::select('selected_contact_ids[]', $contacts, $contact_access, ['class' => 'form-control select2', 'multiple', 'style' => 'width: 100%;' ]) !!}
                     </div>
                 </div>
             </div>

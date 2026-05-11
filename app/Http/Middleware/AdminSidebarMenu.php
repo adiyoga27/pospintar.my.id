@@ -4,7 +4,7 @@ namespace App\Http\Middleware;
 
 use App\Utils\ModuleUtil;
 use Closure;
-use Menu;
+use Nwidart\Menus\Menu;
 
 class AdminSidebarMenu
 {

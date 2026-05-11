@@ -37,7 +37,7 @@
         <div class="col-sm-12">
           <div class="form-group">
             {!! Form::label('name', __( 'invoice.name' ) . ':*') !!}
-              {!! Form::text('name', $invoice->name, ['class' => 'form-control', 'required', 'placeholder' => __( 'invoice.name' ) ]); !!}
+              {!! Form::text('name', $invoice->name, ['class' => 'form-control', 'required', 'placeholder' => __( 'invoice.name' ) ]) !!}
           </div>
         </div>
         <div id="invoice_format_settings">
@@ -48,7 +48,7 @@
               <span class="input-group-addon">
                   <i class="fa fa-info"></i>
               </span>
-                {!! Form::text('prefix', $invoice->prefix, ['class' => 'form-control', 'placeholder' => '']); !!}
+                {!! Form::text('prefix', $invoice->prefix, ['class' => 'form-control', 'placeholder' => '']) !!}
             </div>
           </div>
         </div>
@@ -59,7 +59,7 @@
               <span class="input-group-addon">
                   <i class="fa fa-info"></i>
               </span>
-                {!! Form::number('start_number', $invoice->start_number, ['class' => 'form-control', 'required', 'min' => 0 ]); !!}
+                {!! Form::number('start_number', $invoice->start_number, ['class' => 'form-control', 'required', 'min' => 0 ]) !!}
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@
                   <i class="fa fa-info"></i>
               </span>
               {!! Form::select('total_digits', ['4' => '4', '5' => '5', '6' => '6', '7' => '7', 
-              '8' => '8', '9'=>'9', '10' => '10'], $invoice->total_digits, ['class' => 'form-control', 'required']); !!}
+              '8' => '8', '9'=>'9', '10' => '10'], $invoice->total_digits, ['class' => 'form-control', 'required']) !!}
             </div>
           </div>
         </div>

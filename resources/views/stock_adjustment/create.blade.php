@@ -22,13 +22,13 @@
 				<div class="col-sm-3">
 					<div class="form-group">
 						{!! Form::label('location_id', __('purchase.business_location').':*') !!}
-						{!! Form::select('location_id', $business_locations, null, ['class' => 'form-control select2', 'placeholder' => __('messages.please_select'), 'required']); !!}
+						{!! Form::select('location_id', $business_locations, null, ['class' => 'form-control select2', 'placeholder' => __('messages.please_select'), 'required']) !!}
 					</div>
 				</div>
 				<div class="col-sm-3">
 					<div class="form-group">
 						{!! Form::label('ref_no', __('purchase.ref_no').':') !!}
-						{!! Form::text('ref_no', null, ['class' => 'form-control']); !!}
+						{!! Form::text('ref_no', null, ['class' => 'form-control']) !!}
 					</div>
 				</div>
 				<div class="col-sm-3">
@@ -38,14 +38,14 @@
 							<span class="input-group-addon">
 								<i class="fa fa-calendar"></i>
 							</span>
-							{!! Form::text('transaction_date', @format_datetime('now'), ['class' => 'form-control', 'readonly', 'required']); !!}
+							{!! Form::text('transaction_date', @format_datetime('now'), ['class' => 'form-control', 'readonly', 'required']) !!}
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-3">
 					<div class="form-group">
 						{!! Form::label('adjustment_type', __('stock_adjustment.adjustment_type') . ':*') !!} @show_tooltip(__('tooltip.adjustment_type'))
-						{!! Form::select('adjustment_type', [ 'normal' =>  __('stock_adjustment.normal'), 'abnormal' =>  __('stock_adjustment.abnormal')], null, ['class' => 'form-control select2', 'placeholder' => __('messages.please_select'), 'required']); !!}
+						{!! Form::select('adjustment_type', [ 'normal' =>  __('stock_adjustment.normal'), 'abnormal' =>  __('stock_adjustment.abnormal')], null, ['class' => 'form-control select2', 'placeholder' => __('messages.please_select'), 'required']) !!}
 					</div>
 				</div>
 			</div>
@@ -63,7 +63,7 @@
 							<span class="input-group-addon">
 								<i class="fa fa-search"></i>
 							</span>
-							{!! Form::text('search_product', null, ['class' => 'form-control', 'id' => 'search_product_for_srock_adjustment', 'placeholder' => __('stock_adjustment.search_product'), 'disabled']); !!}
+							{!! Form::text('search_product', null, ['class' => 'form-control', 'id' => 'search_product_for_srock_adjustment', 'placeholder' => __('stock_adjustment.search_product'), 'disabled']) !!}
 						</div>
 					</div>
 				</div>
@@ -109,13 +109,13 @@
 				<div class="col-sm-4">
 					<div class="form-group">
 							{!! Form::label('total_amount_recovered', __('stock_adjustment.total_amount_recovered') . ':') !!} @show_tooltip(__('tooltip.total_amount_recovered'))
-							{!! Form::text('total_amount_recovered', 0, ['class' => 'form-control input_number', 'placeholder' => __('stock_adjustment.total_amount_recovered')]); !!}
+							{!! Form::text('total_amount_recovered', 0, ['class' => 'form-control input_number', 'placeholder' => __('stock_adjustment.total_amount_recovered')]) !!}
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="form-group">
 							{!! Form::label('additional_notes', __('stock_adjustment.reason_for_stock_adjustment') . ':') !!}
-							{!! Form::textarea('additional_notes', null, ['class' => 'form-control', 'placeholder' => __('stock_adjustment.reason_for_stock_adjustment'), 'rows' => 3]); !!}
+							{!! Form::textarea('additional_notes', null, ['class' => 'form-control', 'placeholder' => __('stock_adjustment.reason_for_stock_adjustment'), 'rows' => 3]) !!}
 					</div>
 				</div>
 			</div>

@@ -21,33 +21,33 @@
 							<span class="input-group-addon">
 								<i class="fa fa-calendar"></i>
 							</span>
-							{!! Form::text('transaction_date', @format_datetime('now'), ['class' => 'form-control', 'readonly', 'required']); !!}
+							{!! Form::text('transaction_date', @format_datetime('now'), ['class' => 'form-control', 'readonly', 'required']) !!}
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="form-group">
 						{!! Form::label('ref_no', __('purchase.ref_no').':') !!}
-						{!! Form::text('ref_no', null, ['class' => 'form-control']); !!}
+						{!! Form::text('ref_no', null, ['class' => 'form-control']) !!}
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="form-group">
 						{!! Form::label('status', __('sale.status').':*') !!} @show_tooltip(__('lang_v1.completed_status_help'))
-						{!! Form::select('status', $statuses, null, ['class' => 'form-control select2', 'placeholder' => __('messages.please_select'), 'required', 'id' => 'status']); !!}
+						{!! Form::select('status', $statuses, null, ['class' => 'form-control select2', 'placeholder' => __('messages.please_select'), 'required', 'id' => 'status']) !!}
 					</div>
 				</div>
 				<div class="clearfix"></div>
 				<div class="col-sm-6">
 					<div class="form-group">
 						{!! Form::label('location_id', __('lang_v1.location_from').':*') !!}
-						{!! Form::select('location_id', $business_locations, null, ['class' => 'form-control select2', 'placeholder' => __('messages.please_select'), 'required', 'id' => 'location_id']); !!}
+						{!! Form::select('location_id', $business_locations, null, ['class' => 'form-control select2', 'placeholder' => __('messages.please_select'), 'required', 'id' => 'location_id']) !!}
 					</div>
 				</div>
 				<div class="col-sm-6">
 					<div class="form-group">
 						{!! Form::label('transfer_location_id', __('lang_v1.location_to').':*') !!}
-						{!! Form::select('transfer_location_id', $business_locations, null, ['class' => 'form-control select2', 'placeholder' => __('messages.please_select'), 'required', 'id' => 'transfer_location_id']); !!}
+						{!! Form::select('transfer_location_id', $business_locations, null, ['class' => 'form-control select2', 'placeholder' => __('messages.please_select'), 'required', 'id' => 'transfer_location_id']) !!}
 					</div>
 				</div>
 				
@@ -66,7 +66,7 @@
 							<span class="input-group-addon">
 								<i class="fa fa-search"></i>
 							</span>
-							{!! Form::text('search_product', null, ['class' => 'form-control', 'id' => 'search_product_for_srock_adjustment', 'placeholder' => __('stock_adjustment.search_product'), 'disabled']); !!}
+							{!! Form::text('search_product', null, ['class' => 'form-control', 'id' => 'search_product_for_srock_adjustment', 'placeholder' => __('stock_adjustment.search_product'), 'disabled']) !!}
 						</div>
 					</div>
 				</div>
@@ -112,13 +112,13 @@
 				<div class="col-sm-4">
 					<div class="form-group">
 							{!! Form::label('shipping_charges', __('lang_v1.shipping_charges') . ':') !!}
-							{!! Form::text('shipping_charges', 0, ['class' => 'form-control input_number', 'placeholder' => __('lang_v1.shipping_charges')]); !!}
+							{!! Form::text('shipping_charges', 0, ['class' => 'form-control input_number', 'placeholder' => __('lang_v1.shipping_charges')]) !!}
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="form-group">
 						{!! Form::label('additional_notes',__('purchase.additional_notes')) !!}
-						{!! Form::textarea('additional_notes', null, ['class' => 'form-control', 'rows' => 3]); !!}
+						{!! Form::textarea('additional_notes', null, ['class' => 'form-control', 'rows' => 3]) !!}
 					</div>
 				</div>
 			</div>

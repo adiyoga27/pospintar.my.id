@@ -250,22 +250,23 @@ class NotificationUtil extends Util
 
         //Check if prefered email setting is superadmin email settings
         if (!empty($is_superadmin_settings_allowed) && !empty($email_settings['use_superadmin_settings']) && $check_superadmin) {
-            $email_settings['mail_driver'] = config('mail.driver');
-            $email_settings['mail_host'] = config('mail.host');
-            $email_settings['mail_port'] = config('mail.port');
-            $email_settings['mail_username'] = config('mail.username');
-            $email_settings['mail_password'] = config('mail.password');
-            $email_settings['mail_encryption'] = config('mail.encryption');
+            $email_settings['mail_driver'] = config('mail.mailers.smtp.transport');
+            $email_settings['mail_host'] = config('mail.mailers.smtp.host');
+            $email_settings['mail_port'] = config('mail.mailers.smtp.port');
+            $email_settings['mail_username'] = config('mail.mailers.smtp.username');
+            $email_settings['mail_password'] = config('mail.mailers.smtp.password');
+            $email_settings['mail_encryption'] = config('mail.mailers.smtp.encryption');
             $email_settings['mail_from_address'] = config('mail.from.address');
         }
 
         $mail_driver = !empty($email_settings['mail_driver']) ? $email_settings['mail_driver'] : 'smtp';
-        Config::set('mail.driver', $mail_driver);
-        Config::set('mail.host', $email_settings['mail_host']);
-        Config::set('mail.port', $email_settings['mail_port']);
-        Config::set('mail.username', $email_settings['mail_username']);
-        Config::set('mail.password', $email_settings['mail_password']);
-        Config::set('mail.encryption', $email_settings['mail_encryption']);
+        Config::set('mail.default', $mail_driver);
+        Config::set('mail.mailers.smtp.transport', $mail_driver);
+        Config::set('mail.mailers.smtp.host', $email_settings['mail_host']);
+        Config::set('mail.mailers.smtp.port', $email_settings['mail_port']);
+        Config::set('mail.mailers.smtp.username', $email_settings['mail_username']);
+        Config::set('mail.mailers.smtp.password', $email_settings['mail_password']);
+        Config::set('mail.mailers.smtp.encryption', $email_settings['mail_encryption']);
 
         Config::set('mail.from.address', $email_settings['mail_from_address']);
         Config::set('mail.from.name', $email_settings['mail_from_name']);

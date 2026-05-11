@@ -55,7 +55,7 @@
                             <div class="col-md-12">
                                 @component('components.widget')
                                     <div class="col-md-4">
-                                        {!! Form::select('account_status', ['active' => __('business.is_active'), 'closed' => __('account.closed')], null, ['class' => 'form-control select2', 'style' => 'width:100%', 'id' => 'account_status']); !!}
+                                        {!! Form::select('account_status', ['active' => __('business.is_active'), 'closed' => __('account.closed')], null, ['class' => 'form-control select2', 'style' => 'width:100%', 'id' => 'account_status']) !!}
                                     </div>
                                     <div class="col-md-8">
                                         <button type="button" class="btn btn-primary btn-modal pull-right" 

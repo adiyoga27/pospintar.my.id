@@ -7,7 +7,7 @@
                     <span class="input-group-addon">
                         <i class="fa fa-percent"></i>
                     </span>
-                    {!! Form::text('default_sales_discount', @num_format($business->default_sales_discount), ['class' => 'form-control input_number']); !!}
+                    {!! Form::text('default_sales_discount', @num_format($business->default_sales_discount), ['class' => 'form-control input_number']) !!}
                 </div>
             </div>
         </div>
@@ -19,7 +19,7 @@
                     <span class="input-group-addon">
                         <i class="fa fa-info"></i>
                     </span>
-                    {!! Form::select('default_sales_tax', $tax_rates, $business->default_sales_tax, ['class' => 'form-control select2','placeholder' => __('business.default_sales_tax'), 'style' => 'width: 100%;']); !!}
+                    {!! Form::select('default_sales_tax', $tax_rates, $business->default_sales_tax, ['class' => 'form-control select2','placeholder' => __('business.default_sales_tax'), 'style' => 'width: 100%;']) !!}
                 </div>
             </div>
         </div>
@@ -51,14 +51,14 @@
                     <span class="input-group-addon">
                         <i class="fa fa-info"></i>
                     </span>
-                    {!! Form::select('sales_cmsn_agnt', $commission_agent_dropdown, $business->sales_cmsn_agnt, ['class' => 'form-control select2', 'style' => 'width: 100%;']); !!}
+                    {!! Form::select('sales_cmsn_agnt', $commission_agent_dropdown, $business->sales_cmsn_agnt, ['class' => 'form-control select2', 'style' => 'width: 100%;']) !!}
                 </div>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="form-group">
                 {!! Form::label('item_addition_method', __('lang_v1.sales_item_addition_method') . ':') !!}
-                {!! Form::select('item_addition_method', [ 0 => __('lang_v1.add_item_in_new_row'), 1 =>  __('lang_v1.increase_item_qty')], $business->item_addition_method, ['class' => 'form-control select2', 'style' => 'width: 100%;']); !!}
+                {!! Form::select('item_addition_method', [ 0 => __('lang_v1.add_item_in_new_row'), 1 =>  __('lang_v1.increase_item_qty')], $business->item_addition_method, ['class' => 'form-control select2', 'style' => 'width: 100%;']) !!}
             </div>
         </div>
 
@@ -72,7 +72,7 @@
                     '0.1' =>  __('lang_v1.round_to_nearest_decimal', ['multiple' => 0.1]),
                     '0.5' =>  __('lang_v1.round_to_nearest_decimal', ['multiple' => 0.5])
                 ], 
-                !empty($pos_settings['amount_rounding_method']) ? $pos_settings['amount_rounding_method'] : null, ['class' => 'form-control select2', 'style' => 'width: 100%;', 'placeholder' => __('lang_v1.none')]); !!}
+                !empty($pos_settings['amount_rounding_method']) ? $pos_settings['amount_rounding_method'] : null, ['class' => 'form-control select2', 'style' => 'width: 100%;', 'placeholder' => __('lang_v1.none')]) !!}
             </div>
         </div>
 
@@ -83,7 +83,7 @@
                   <label>
                     {!! Form::checkbox('pos_settings[enable_msp]', 1,  
                         !empty($pos_settings['enable_msp']) ? true : false , 
-                    [ 'class' => 'input-icheck']); !!} {{ __( 'lang_v1.sale_price_is_minimum_sale_price' ) }} 
+                    [ 'class' => 'input-icheck']) !!} {{ __( 'lang_v1.sale_price_is_minimum_sale_price' ) }} 
                   </label>
                   @show_tooltip(__('lang_v1.minimum_sale_price_help'))
                 </div>
@@ -96,7 +96,7 @@
                   <label>
                     {!! Form::checkbox('pos_settings[allow_overselling]', 1,  
                         !empty($pos_settings['allow_overselling']) ? true : false , 
-                    [ 'class' => 'input-icheck']); !!} {{ __( 'lang_v1.allow_overselling' ) }} 
+                    [ 'class' => 'input-icheck']) !!} {{ __( 'lang_v1.allow_overselling' ) }} 
                   </label>
                   @show_tooltip(__('lang_v1.allow_overselling_help'))
                 </div>
@@ -106,7 +106,7 @@
             <div class="form-group">
                 <div class="checkbox">
                     <label>
-                    {!! Form::checkbox('pos_settings[enable_sales_order]', 1, !empty($pos_settings['enable_sales_order']) , [ 'class' => 'input-icheck', 'id' => 'enable_sales_order']); !!} {{ __( 'lang_v1.enable_sales_order' ) }}
+                    {!! Form::checkbox('pos_settings[enable_sales_order]', 1, !empty($pos_settings['enable_sales_order']) , [ 'class' => 'input-icheck', 'id' => 'enable_sales_order']) !!} {{ __( 'lang_v1.enable_sales_order' ) }}
                     </label>
                   @show_tooltip(__('lang_v1.sales_order_help_text'))
                 </div>

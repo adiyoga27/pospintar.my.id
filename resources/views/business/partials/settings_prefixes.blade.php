@@ -9,7 +9,7 @@
                     }
                 @endphp
                 {!! Form::label('ref_no_prefixes[purchase]', __('lang_v1.purchase') . ':') !!}
-                {!! Form::text('ref_no_prefixes[purchase]', $purchase_prefix, ['class' => 'form-control']); !!}
+                {!! Form::text('ref_no_prefixes[purchase]', $purchase_prefix, ['class' => 'form-control']) !!}
             </div>
         </div>
         <div class="col-sm-4">
@@ -21,7 +21,7 @@
                     }
                 @endphp
                 {!! Form::label('ref_no_prefixes[purchase_return]', __('lang_v1.purchase_return') . ':') !!}
-                {!! Form::text('ref_no_prefixes[purchase_return]', $purchase_return, ['class' => 'form-control']); !!}
+                {!! Form::text('ref_no_prefixes[purchase_return]', $purchase_return, ['class' => 'form-control']) !!}
             </div>
         </div>
         <div class="col-sm-4">
@@ -30,7 +30,7 @@
                     $purchase_order_prefix = !empty($business->ref_no_prefixes['purchase_order']) ? $business->ref_no_prefixes['purchase_order'] : '';
                 @endphp
                 {!! Form::label('ref_no_prefixes[purchase_order]', __('lang_v1.purchase_order') . ':') !!}
-                {!! Form::text('ref_no_prefixes[purchase_order]', $purchase_order_prefix, ['class' => 'form-control']); !!}
+                {!! Form::text('ref_no_prefixes[purchase_order]', $purchase_order_prefix, ['class' => 'form-control']) !!}
             </div>
         </div>
         <div class="col-sm-4">
@@ -42,7 +42,7 @@
                     }
                 @endphp
                 {!! Form::label('ref_no_prefixes[stock_transfer]', __('lang_v1.stock_transfer') . ':') !!}
-                {!! Form::text('ref_no_prefixes[stock_transfer]', $stock_transfer_prefix, ['class' => 'form-control']); !!}
+                {!! Form::text('ref_no_prefixes[stock_transfer]', $stock_transfer_prefix, ['class' => 'form-control']) !!}
             </div>
         </div>
         <div class="col-sm-4">
@@ -54,7 +54,7 @@
                     }
                 @endphp
                 {!! Form::label('ref_no_prefixes[stock_adjustment]', __('stock_adjustment.stock_adjustment') . ':') !!}
-                {!! Form::text('ref_no_prefixes[stock_adjustment]', $stock_adjustment_prefix, ['class' => 'form-control']); !!}
+                {!! Form::text('ref_no_prefixes[stock_adjustment]', $stock_adjustment_prefix, ['class' => 'form-control']) !!}
             </div>
         </div>
         <div class="col-sm-4">
@@ -66,7 +66,7 @@
                     }
                 @endphp
                 {!! Form::label('ref_no_prefixes[sell_return]', __('lang_v1.sell_return') . ':') !!}
-                {!! Form::text('ref_no_prefixes[sell_return]', $sell_return_prefix, ['class' => 'form-control']); !!}
+                {!! Form::text('ref_no_prefixes[sell_return]', $sell_return_prefix, ['class' => 'form-control']) !!}
             </div>
         </div>
         <div class="col-sm-4">
@@ -78,7 +78,7 @@
                     }
                 @endphp
                 {!! Form::label('ref_no_prefixes[expense]', __('expense.expenses') . ':') !!}
-                {!! Form::text('ref_no_prefixes[expense]', $expenses_prefix, ['class' => 'form-control']); !!}
+                {!! Form::text('ref_no_prefixes[expense]', $expenses_prefix, ['class' => 'form-control']) !!}
             </div>
         </div>
         <div class="col-sm-4">
@@ -90,7 +90,7 @@
                     }
                 @endphp
                 {!! Form::label('ref_no_prefixes[contacts]', __('contact.contacts') . ':') !!}
-                {!! Form::text('ref_no_prefixes[contacts]', $contacts_prefix, ['class' => 'form-control']); !!}
+                {!! Form::text('ref_no_prefixes[contacts]', $contacts_prefix, ['class' => 'form-control']) !!}
             </div>
         </div>
         <div class="col-sm-4">
@@ -102,7 +102,7 @@
                     }
                 @endphp
                 {!! Form::label('ref_no_prefixes[purchase_payment]', __('lang_v1.purchase_payment') . ':') !!}
-                {!! Form::text('ref_no_prefixes[purchase_payment]', $purchase_payment, ['class' => 'form-control']); !!}
+                {!! Form::text('ref_no_prefixes[purchase_payment]', $purchase_payment, ['class' => 'form-control']) !!}
             </div>
         </div>
         <div class="col-sm-4">
@@ -114,7 +114,7 @@
                     }
                 @endphp
                 {!! Form::label('ref_no_prefixes[sell_payment]', __('lang_v1.sell_payment') . ':') !!}
-                {!! Form::text('ref_no_prefixes[sell_payment]', $sell_payment, ['class' => 'form-control']); !!}
+                {!! Form::text('ref_no_prefixes[sell_payment]', $sell_payment, ['class' => 'form-control']) !!}
             </div>
         </div>
         <div class="col-sm-4">
@@ -126,7 +126,7 @@
                     }
                 @endphp
                 {!! Form::label('ref_no_prefixes[expense_payment]', __('lang_v1.expense_payment') . ':') !!}
-                {!! Form::text('ref_no_prefixes[expense_payment]', $expense_payment, ['class' => 'form-control']); !!}
+                {!! Form::text('ref_no_prefixes[expense_payment]', $expense_payment, ['class' => 'form-control']) !!}
             </div>
         </div>
         <div class="col-sm-4">
@@ -138,7 +138,7 @@
                     }
                 @endphp
                 {!! Form::label('ref_no_prefixes[business_location]', __('business.business_location') . ':') !!}
-                {!! Form::text('ref_no_prefixes[business_location]', $business_location_prefix, ['class' => 'form-control']); !!}
+                {!! Form::text('ref_no_prefixes[business_location]', $business_location_prefix, ['class' => 'form-control']) !!}
             </div>
         </div>
         <div class="col-sm-4">
@@ -147,7 +147,7 @@
                     $username_prefix = !empty($business->ref_no_prefixes['username']) ? $business->ref_no_prefixes['username'] : '';
                 @endphp
                 {!! Form::label('ref_no_prefixes[username]', __('business.username') . ':') !!}
-                {!! Form::text('ref_no_prefixes[username]', $username_prefix, ['class' => 'form-control']); !!}
+                {!! Form::text('ref_no_prefixes[username]', $username_prefix, ['class' => 'form-control']) !!}
             </div>
         </div>
         <div class="col-sm-4">
@@ -156,7 +156,7 @@
                     $subscription_prefix = !empty($business->ref_no_prefixes['subscription']) ? $business->ref_no_prefixes['subscription'] : '';
                 @endphp
                 {!! Form::label('ref_no_prefixes[subscription]', __('lang_v1.subscription_no') . ':') !!}
-                {!! Form::text('ref_no_prefixes[subscription]', $subscription_prefix, ['class' => 'form-control']); !!}
+                {!! Form::text('ref_no_prefixes[subscription]', $subscription_prefix, ['class' => 'form-control']) !!}
             </div>
         </div>
         <div class="col-sm-4">
@@ -165,7 +165,7 @@
                     $draft_prefix = !empty($business->ref_no_prefixes['draft']) ? $business->ref_no_prefixes['draft'] : '';
                 @endphp
                 {!! Form::label('ref_no_prefixes[draft]', __('sale.draft') . ':') !!}
-                {!! Form::text('ref_no_prefixes[draft]', $draft_prefix, ['class' => 'form-control']); !!}
+                {!! Form::text('ref_no_prefixes[draft]', $draft_prefix, ['class' => 'form-control']) !!}
             </div>
         </div>
         <div class="col-sm-4">
@@ -174,7 +174,7 @@
                     $sales_order_prefix = !empty($business->ref_no_prefixes['sales_order']) ? $business->ref_no_prefixes['sales_order'] : '';
                 @endphp
                 {!! Form::label('ref_no_prefixes[sales_order]', __('lang_v1.sales_order') . ':') !!}
-                {!! Form::text('ref_no_prefixes[sales_order]', $sales_order_prefix, ['class' => 'form-control']); !!}
+                {!! Form::text('ref_no_prefixes[sales_order]', $sales_order_prefix, ['class' => 'form-control']) !!}
             </div>
         </div>
     </div>

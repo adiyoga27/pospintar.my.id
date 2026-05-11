@@ -8,7 +8,7 @@
     {!! Form::open(['url' => route('business.postRegister'), 'method' => 'post', 
                             'id' => 'business_register_form','files' => true ]) !!}
         @include('business.partials.register_form')
-        {!! Form::hidden('package_id', $package_id); !!}
+        {!! Form::hidden('package_id', $package_id) !!}
     {!! Form::close() !!}
 </div>
 @stop

@@ -34,7 +34,7 @@
             <div style="width: 28%;margin-bottom: 5px;">
                {!! Form::select('select_location_id', $business_locations, $default_location->id ?? null , ['class' => 'form-control input-sm',
                 'id' => 'select_location_id', 
-                'required', 'autofocus'], $bl_attributes); !!}
+                'required', 'autofocus'], $bl_attributes) !!}
             </div>
             @else
               {{$default_location->name}}

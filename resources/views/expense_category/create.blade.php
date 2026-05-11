@@ -10,12 +10,12 @@
     <div class="modal-body">
       <div class="form-group">
         {!! Form::label('name', __( 'expense.category_name' ) . ':*') !!}
-          {!! Form::text('name', null, ['class' => 'form-control', 'required', 'placeholder' => __( 'expense.category_name' )]); !!}
+          {!! Form::text('name', null, ['class' => 'form-control', 'required', 'placeholder' => __( 'expense.category_name' )]) !!}
       </div>
 
       <div class="form-group">
         {!! Form::label('code', __( 'expense.category_code' ) . ':') !!}
-          {!! Form::text('code', null, ['class' => 'form-control', 'placeholder' => __( 'expense.category_code' )]); !!}
+          {!! Form::text('code', null, ['class' => 'form-control', 'placeholder' => __( 'expense.category_code' )]) !!}
       </div>
     </div>
 

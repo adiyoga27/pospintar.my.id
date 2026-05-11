@@ -27,7 +27,7 @@
                         __('lang_v1.email_subject').':') !!}
                         {!! Form::text('template_data[' . $key . '][subject]', 
                         $value['subject'], ['class' => 'form-control'
-                        , 'placeholder' => __('lang_v1.email_subject'), 'id' => $key . '_subject']); !!}
+                        , 'placeholder' => __('lang_v1.email_subject'), 'id' => $key . '_subject']) !!}
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -36,7 +36,7 @@
                         'CC:') !!}
                         {!! Form::email('template_data[' . $key . '][cc]', 
                         $value['cc'], ['class' => 'form-control'
-                        , 'placeholder' => 'CC', 'id' => $key . '_cc']); !!}
+                        , 'placeholder' => 'CC', 'id' => $key . '_cc']) !!}
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -45,7 +45,7 @@
                         'BCC:') !!}
                         {!! Form::email('template_data[' . $key . '][bcc]', 
                         $value['bcc'], ['class' => 'form-control'
-                        , 'placeholder' => 'BCC', 'id' => $key . '_bcc']); !!}
+                        , 'placeholder' => 'BCC', 'id' => $key . '_bcc']) !!}
                     </div>
                 </div>
                 <div class="col-md-12">
@@ -54,7 +54,7 @@
                         __('lang_v1.email_body').':') !!}
                         {!! Form::textarea('template_data[' . $key . '][email_body]', 
                         $value['email_body'], ['class' => 'form-control ckeditor'
-                        , 'placeholder' => __('lang_v1.email_body'), 'id' => $key . '_email_body', 'rows' => 6]); !!}
+                        , 'placeholder' => __('lang_v1.email_body'), 'id' => $key . '_email_body', 'rows' => 6]) !!}
                     </div>
                 </div>
                 <div class="col-md-12 @if($key == 'send_ledger') hide @endif">
@@ -63,7 +63,7 @@
                         __('lang_v1.sms_body').':') !!}
                         {!! Form::textarea('template_data[' . $key . '][sms_body]', 
                         $value['sms_body'], ['class' => 'form-control'
-                        , 'placeholder' => __('lang_v1.sms_body'), 'id' => $key . '_sms_body', 'rows' => 6]); !!}
+                        , 'placeholder' => __('lang_v1.sms_body'), 'id' => $key . '_sms_body', 'rows' => 6]) !!}
                     </div>
                 </div>
                 <div class="col-md-12 @if($key == 'send_ledger') hide @endif">
@@ -72,20 +72,20 @@
                         __('lang_v1.whatsapp_text').':') !!}
                         {!! Form::textarea('template_data[' . $key . '][whatsapp_text]', 
                         $value['whatsapp_text'], ['class' => 'form-control'
-                        , 'placeholder' => __('lang_v1.whatsapp_text'), 'id' => $key . '_whatsapp_text', 'rows' => 6]); !!}
+                        , 'placeholder' => __('lang_v1.whatsapp_text'), 'id' => $key . '_whatsapp_text', 'rows' => 6]) !!}
                     </div>
                 </div>
                 @if($key == 'new_sale')
                     <div class="col-md-12">
                         <div class="form-group">
                             <label class="checkbox-inline">
-                                {!! Form::checkbox('template_data[' . $key . '][auto_send]', 1, $value['auto_send'], ['class' => 'input-icheck']); !!} @lang('lang_v1.autosend_email')
+                                {!! Form::checkbox('template_data[' . $key . '][auto_send]', 1, $value['auto_send'], ['class' => 'input-icheck']) !!} @lang('lang_v1.autosend_email')
                             </label>
                             <label class="checkbox-inline">
-                                {!! Form::checkbox('template_data[' . $key . '][auto_send_sms]', 1, $value['auto_send_sms'], ['class' => 'input-icheck']); !!} @lang('lang_v1.autosend_sms')
+                                {!! Form::checkbox('template_data[' . $key . '][auto_send_sms]', 1, $value['auto_send_sms'], ['class' => 'input-icheck']) !!} @lang('lang_v1.autosend_sms')
                             </label>
                             <label class="checkbox-inline">
-                                {!! Form::checkbox('template_data[' . $key . '][auto_send_wa_notif]', 1, $value['auto_send_wa_notif'], ['class' => 'input-icheck']); !!} @lang('lang_v1.auto_send_wa_notif')
+                                {!! Form::checkbox('template_data[' . $key . '][auto_send_wa_notif]', 1, $value['auto_send_wa_notif'], ['class' => 'input-icheck']) !!} @lang('lang_v1.auto_send_wa_notif')
                             </label>
                         </div>
                     </div>

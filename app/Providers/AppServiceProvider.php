@@ -37,8 +37,8 @@ class AppServiceProvider extends ServiceProvider
         //In Laravel 5.6, Blade will double encode special characters by default. If you would like to maintain the previous behavior of preventing double encoding, you may add Blade::withoutDoubleEncoding() to your AppServiceProvider boot method.
         Blade::withoutDoubleEncoding();
 
-        //Laravel 5.6 uses Bootstrap 4 by default. Shift did not update your front-end resources or dependencies as this could impact your UI. If you are using Bootstrap and wish to continue using Bootstrap 3, you should add Paginator::useBootstrapThree() to your AppServiceProvider boot method.
-        Paginator::useBootstrapThree();
+        // Bootstrap 3 pagination is no longer supported in Laravel 9+. Use Bootstrap 5 default.
+        // Paginator::useBootstrapThree();
 
         $asset_v = config('constants.asset_version', 1);
         View::share('asset_v', $asset_v);

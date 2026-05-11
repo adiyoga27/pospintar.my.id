@@ -1,55 +1,55 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Create The Application
-|--------------------------------------------------------------------------
-|
-| The first thing we will do is create a new Laravel application instance
-| which serves as the "glue" for all the components of Laravel, and is
-| the IoC container for the system binding all of the various parts.
-|
-*/
+use Illuminate\Foundation\Application;
+use Illuminate\Foundation\Configuration\Exceptions;
+use Illuminate\Foundation\Configuration\Middleware;
+use Illuminate\Support\Facades\Route;
 
-$app = new Illuminate\Foundation\Application(
-    realpath(__DIR__.'/../')
-);
+return Application::configure(basePath: dirname(__DIR__))
+    ->withRouting(
+        commands: __DIR__.'/../routes/console.php',
+        using: function () {
+            $namespace = 'App\Http\Controllers';
 
-/*
-|--------------------------------------------------------------------------
-| Bind Important Interfaces
-|--------------------------------------------------------------------------
-|
-| Next, we need to bind some important interfaces into the container so
-| we will be able to resolve them when needed. The kernels serve the
-| incoming requests to this application from both the web and CLI.
-|
-*/
+            Route::middleware('web')
+                ->namespace($namespace)
+                ->group(base_path('routes/web.php'));
 
-$app->singleton(
-    Illuminate\Contracts\Http\Kernel::class,
-    App\Http\Kernel::class
-);
+            Route::middleware('api')
+                ->prefix('api')
+                ->namespace($namespace)
+                ->group(base_path('routes/api.php'));
+        },
+    )
+    ->withMiddleware(function (Middleware $middleware) {
+        $middleware->use([
+            \App\Http\Middleware\TrustProxies::class,
+            \App\Http\Middleware\PreventRequestsDuringMaintenance::class,
+            \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
+            \App\Http\Middleware\TrimStrings::class,
+            \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+        ]);
 
-$app->singleton(
-    Illuminate\Contracts\Console\Kernel::class,
-    App\Console\Kernel::class
-);
+        $middleware->alias([
+            'auth' => \App\Http\Middleware\Authenticate::class,
+            'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
+            'language' => \App\Http\Middleware\Language::class,
+            'timezone' => \App\Http\Middleware\Timezone::class,
+            'SetSessionData' => \App\Http\Middleware\SetSessionData::class,
+            'setData' => \App\Http\Middleware\IsInstalled::class,
+            'authh' => \App\Http\Middleware\IsInstalled::class,
+            'EcomApi' => \App\Http\Middleware\EcomApi::class,
+            'AdminSidebarMenu' => \App\Http\Middleware\AdminSidebarMenu::class,
+            'superadmin' => \App\Http\Middleware\Superadmin::class,
+            'CheckUserLogin' => \App\Http\Middleware\CheckUserLogin::class,
+            'allow_registration' => \App\Http\Middleware\AllowRegistration::class,
+        ]);
 
-$app->singleton(
-    Illuminate\Contracts\Debug\ExceptionHandler::class,
-    App\Exceptions\Handler::class
-);
-
-/*
-|--------------------------------------------------------------------------
-| Return The Application
-|--------------------------------------------------------------------------
-|
-| This script returns the application instance. The instance is given to
-| the calling script so we can separate the building of the instances
-| from the actual running of the application and sending responses.
-|
-*/
-
-return $app;
+        $middleware->api(prepend: [
+            \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
+        ]);
+    })
+    ->withExceptions(function (Exceptions $exceptions) {
+        //
+    })
+    ->create();

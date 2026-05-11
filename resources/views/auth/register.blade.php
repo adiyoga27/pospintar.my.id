@@ -13,8 +13,8 @@
                 <h3 class="box-title text-center">Register and Get Started in minutes</h3>
             </div>
 
-            {!! Form::open(['url' => {{ route('business.postRegister') }}]) !!}
-            {!! Form::token(); !!}
+            {!! Form::open(['url' => route('business.postRegister')]) !!}
+            {!! Form::token() !!}
 
                 <!-- /.box-header -->
                 <div class="box-body">
@@ -25,7 +25,7 @@
                                 <span class="input-group-addon">
                                     <i class="fa fa-suitcase"></i>
                                 </span>
-                                {!! Form::text('name', null, ['class' => 'form-control','placeholder' => 'Business name']); !!}
+                                {!! Form::text('name', null, ['class' => 'form-control','placeholder' => 'Business name']) !!}
                             </div>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-calendar"></i>
                             </span>
-                            {!! Form::text('start_date', null, ['class' => 'form-control start-date-picker','placeholder' => 'Start Date', 'readonly']); !!}
+                            {!! Form::text('start_date', null, ['class' => 'form-control start-date-picker','placeholder' => 'Start Date', 'readonly']) !!}
                         </div>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
                             <span class="input-group-addon">
                                 <i class="fas fa-money-bill-alt"></i>
                             </span>
-                            {!! Form::select('currency', $currencies, '', ['class' => 'form-control','placeholder' => 'Select Currency']); !!}
+                            {!! Form::select('currency', $currencies, '', ['class' => 'form-control','placeholder' => 'Select Currency']) !!}
                         </div>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-globe"></i>
                             </span>
-                            {!! Form::text('country', null, ['class' => 'form-control','placeholder' => 'Country']); !!}
+                            {!! Form::text('country', null, ['class' => 'form-control','placeholder' => 'Country']) !!}
                         </div>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-map-marker"></i>
                             </span>
-                            {!! Form::text('state', null, ['class' => 'form-control','placeholder' => 'State']); !!}
+                            {!! Form::text('state', null, ['class' => 'form-control','placeholder' => 'State']) !!}
                         </div>
                         </div>
                     </div>
@@ -85,7 +85,7 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-map-marker"></i>
                             </span>
-                            {!! Form::text('city', null, ['class' => 'form-control','placeholder' => 'City']); !!}
+                            {!! Form::text('city', null, ['class' => 'form-control','placeholder' => 'City']) !!}
                         </div>
                         </div>
                     </div>
@@ -97,7 +97,7 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-map-marker"></i>
                             </span>
-                            {!! Form::text('zip_code', null, ['class' => 'form-control','placeholder' => 'Zip/Postal Code']); !!}
+                            {!! Form::text('zip_code', null, ['class' => 'form-control','placeholder' => 'Zip/Postal Code']) !!}
                         </div>
                         </div>
                     </div>
@@ -109,7 +109,7 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-map-marker"></i>
                             </span>
-                            {!! Form::text('landmark', null, ['class' => 'form-control','placeholder' => 'Landmark']); !!}
+                            {!! Form::text('landmark', null, ['class' => 'form-control','placeholder' => 'Landmark']) !!}
                         </div>
                         </div>
                     </div>
@@ -125,7 +125,7 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-info"></i>
                             </span>
-                            {!! Form::text('tax_label_1', null, ['class' => 'form-control','placeholder' => 'GST / VAT / Other']); !!}
+                            {!! Form::text('tax_label_1', null, ['class' => 'form-control','placeholder' => 'GST / VAT / Other']) !!}
                         </div>
                         </div>
                     </div>
@@ -137,7 +137,7 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-info"></i>
                             </span>
-                            {!! Form::text('tax_number_1', null, ['class' => 'form-control',]); !!}
+                            {!! Form::text('tax_number_1', null, ['class' => 'form-control',]) !!}
                         </div>
                         </div>
                     </div>
@@ -149,7 +149,7 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-info"></i>
                             </span>
-                            {!! Form::text('tax_label_2', null, ['class' => 'form-control','placeholder' => 'GST / VAT / Other']); !!}
+                            {!! Form::text('tax_label_2', null, ['class' => 'form-control','placeholder' => 'GST / VAT / Other']) !!}
                         </div>
                         </div>
                     </div>
@@ -161,7 +161,7 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-info"></i>
                             </span>
-                            {!! Form::text('tax_number_2', null, ['class' => 'form-control',]); !!}
+                            {!! Form::text('tax_number_2', null, ['class' => 'form-control',]) !!}
                         </div>
                         </div>
                     </div>
@@ -178,7 +178,7 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-info"></i>
                             </span>
-                            {!! Form::text('surname', null, ['class' => 'form-control','placeholder' => 'GST / VAT / Other']); !!}
+                            {!! Form::text('surname', null, ['class' => 'form-control','placeholder' => 'GST / VAT / Other']) !!}
                         </div>
                         </div>
                     </div>
@@ -190,7 +190,7 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-info"></i>
                             </span>
-                            {!! Form::text('first_name', null, ['class' => 'form-control','placeholder' => 'Owner Name']); !!}
+                            {!! Form::text('first_name', null, ['class' => 'form-control','placeholder' => 'Owner Name']) !!}
                         </div>
                         </div>
                     </div>
@@ -202,7 +202,7 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-info"></i>
                             </span>
-                            {!! Form::text('last_name', null, ['class' => 'form-control','placeholder' => 'Owner Name']); !!}
+                            {!! Form::text('last_name', null, ['class' => 'form-control','placeholder' => 'Owner Name']) !!}
                         </div>
                         </div>
                     </div>
@@ -214,7 +214,7 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-user"></i>
                             </span>
-                            {!! Form::text('username', null, ['class' => 'form-control','placeholder' => 'Username used for login']); !!}
+                            {!! Form::text('username', null, ['class' => 'form-control','placeholder' => 'Username used for login']) !!}
                         </div>
                         </div>
                     </div>
@@ -226,7 +226,7 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-envelope"></i>
                             </span>
-                            {!! Form::text('email', null, ['class' => 'form-control','placeholder' => '']); !!}
+                            {!! Form::text('email', null, ['class' => 'form-control','placeholder' => '']) !!}
                         </div>
                         </div>
                     </div>
@@ -238,7 +238,7 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-lock"></i>
                             </span>
-                            {!! Form::password('password', ['class' => 'form-control','placeholder' => 'Login Password']); !!}
+                            {!! Form::password('password', ['class' => 'form-control','placeholder' => 'Login Password']) !!}
                         </div>
                         </div>
                     </div>
@@ -250,7 +250,7 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-lock"></i>
                             </span>
-                            {!! Form::password('confirm_password', ['class' => 'form-control','placeholder' => 'Same as Login Password']); !!}
+                            {!! Form::password('confirm_password', ['class' => 'form-control','placeholder' => 'Same as Login Password']) !!}
                         </div>
                         </div>
                     </div>

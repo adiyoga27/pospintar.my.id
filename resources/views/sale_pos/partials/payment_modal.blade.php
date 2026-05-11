@@ -9,7 +9,7 @@
 				<div class="row">
 					<div class="col-md-12 mb-12">
 						<strong>@lang('lang_v1.advance_balance'):</strong> <span id="advance_balance_text"></span>
-						{!! Form::hidden('advance_balance', null, ['id' => 'advance_balance', 'data-error-msg' => __('lang_v1.required_advance_balance_not_available')]); !!}
+						{!! Form::hidden('advance_balance', null, ['id' => 'advance_balance', 'data-error-msg' => __('lang_v1.required_advance_balance_not_available')]) !!}
 					</div>
 					<div class="col-md-9">
 						<div class="row">
@@ -39,14 +39,14 @@
 							<div class="col-md-6">
 								<div class="form-group">
 									{!! Form::label('sale_note', __('sale.sell_note') . ':') !!}
-									{!! Form::textarea('sale_note', !empty($transaction)? $transaction->additional_notes:null, ['class' => 'form-control', 'rows' => 3, 'placeholder' => __('sale.sell_note')]); !!}
+									{!! Form::textarea('sale_note', !empty($transaction)? $transaction->additional_notes:null, ['class' => 'form-control', 'rows' => 3, 'placeholder' => __('sale.sell_note')]) !!}
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
 									{!! Form::label('staff_note', __('sale.staff_note') . ':') !!}
 									{!! Form::textarea('staff_note', 
-									!empty($transaction)? $transaction->staff_note:null, ['class' => 'form-control', 'rows' => 3, 'placeholder' => __('sale.staff_note')]); !!}
+									!empty($transaction)? $transaction->staff_note:null, ['class' => 'form-control', 'rows' => 3, 'placeholder' => __('sale.staff_note')]) !!}
 								</div>
 							</div>
 						</div>
@@ -88,7 +88,7 @@
 				            		</strong>
 				            		<br/>
 				            		<span class="lead text-bold change_return_span">0</span>
-				            		{!! Form::hidden("change_return", $change_return['amount'], ['class' => 'form-control change_return input_number', 'required', 'id' => "change_return"]); !!}
+				            		{!! Form::hidden("change_return", $change_return['amount'], ['class' => 'form-control change_return input_number', 'required', 'id' => "change_return"]) !!}
 				            		<!-- <span class="lead text-bold total_quantity">0</span> -->
 				            		@if(!empty($change_return['id']))
 				                		<input type="hidden" name="change_return_id" 
@@ -137,45 +137,45 @@
 		<div class="col-md-4">
 			<div class="form-group">
 				{!! Form::label("card_number", __('lang_v1.card_no')) !!}
-				{!! Form::text("", null, ['class' => 'form-control', 'placeholder' => __('lang_v1.card_no'), 'id' => "card_number", 'autofocus']); !!}
+				{!! Form::text("", null, ['class' => 'form-control', 'placeholder' => __('lang_v1.card_no'), 'id' => "card_number", 'autofocus']) !!}
 			</div>
 		</div>
 		<div class="col-md-4">
 			<div class="form-group">
 				{!! Form::label("card_holder_name", __('lang_v1.card_holder_name')) !!}
-				{!! Form::text("", null, ['class' => 'form-control', 'placeholder' => __('lang_v1.card_holder_name'), 'id' => "card_holder_name"]); !!}
+				{!! Form::text("", null, ['class' => 'form-control', 'placeholder' => __('lang_v1.card_holder_name'), 'id' => "card_holder_name"]) !!}
 			</div>
 		</div>
 		<div class="col-md-4">
 			<div class="form-group">
 				{!! Form::label("card_transaction_number",__('lang_v1.card_transaction_no')) !!}
-				{!! Form::text("", null, ['class' => 'form-control', 'placeholder' => __('lang_v1.card_transaction_no'), 'id' => "card_transaction_number"]); !!}
+				{!! Form::text("", null, ['class' => 'form-control', 'placeholder' => __('lang_v1.card_transaction_no'), 'id' => "card_transaction_number"]) !!}
 			</div>
 		</div>
 		<div class="clearfix"></div>
 		<div class="col-md-3">
 			<div class="form-group">
 				{!! Form::label("card_type", __('lang_v1.card_type')) !!}
-				{!! Form::select("", ['visa' => 'Visa', 'master' => 'MasterCard'], 'visa',['class' => 'form-control select2', 'id' => "card_type" ]); !!}
+				{!! Form::select("", ['visa' => 'Visa', 'master' => 'MasterCard'], 'visa',['class' => 'form-control select2', 'id' => "card_type" ]) !!}
 			</div>
 		</div>
 		<div class="col-md-3">
 			<div class="form-group">
 				{!! Form::label("card_month", __('lang_v1.month')) !!}
 				{!! Form::text("", null, ['class' => 'form-control', 'placeholder' => __('lang_v1.month'),
-				'id' => "card_month" ]); !!}
+				'id' => "card_month" ]) !!}
 			</div>
 		</div>
 		<div class="col-md-3">
 			<div class="form-group">
 				{!! Form::label("card_year", __('lang_v1.year')) !!}
-				{!! Form::text("", null, ['class' => 'form-control', 'placeholder' => __('lang_v1.year'), 'id' => "card_year" ]); !!}
+				{!! Form::text("", null, ['class' => 'form-control', 'placeholder' => __('lang_v1.year'), 'id' => "card_year" ]) !!}
 			</div>
 		</div>
 		<div class="col-md-3">
 			<div class="form-group">
 				{!! Form::label("card_security",__('lang_v1.security_code')) !!}
-				{!! Form::text("", null, ['class' => 'form-control', 'placeholder' => __('lang_v1.security_code'), 'id' => "card_security"]); !!}
+				{!! Form::text("", null, ['class' => 'form-control', 'placeholder' => __('lang_v1.security_code'), 'id' => "card_security"]) !!}
 			</div>
 		</div>
 					</div>

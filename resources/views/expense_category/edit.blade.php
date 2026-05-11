@@ -11,12 +11,12 @@
     <div class="modal-body">
      <div class="form-group">
         {!! Form::label('name', __( 'expense.category_name' ) . ':*') !!}
-          {!! Form::text('name', $expense_category->name, ['class' => 'form-control', 'required', 'placeholder' => __( 'expense.category_name' )]); !!}
+          {!! Form::text('name', $expense_category->name, ['class' => 'form-control', 'required', 'placeholder' => __( 'expense.category_name' )]) !!}
       </div>
 
       <div class="form-group">
         {!! Form::label('code', __( 'expense.category_code' ) . ':') !!}
-          {!! Form::text('code', $expense_category->code, ['class' => 'form-control', 'placeholder' => __( 'expense.category_code' )]); !!}
+          {!! Form::text('code', $expense_category->code, ['class' => 'form-control', 'placeholder' => __( 'expense.category_code' )]) !!}
       </div>
     <div class="modal-footer">
       <button type="submit" class="btn btn-primary">@lang( 'messages.update' )</button>

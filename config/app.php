@@ -130,7 +130,7 @@ return [
     |
     */
 
-    'providers' => [
+        'providers' => [
 
         /*
          * Laravel Framework Service Providers...
@@ -173,8 +173,7 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         Collective\Html\HtmlServiceProvider::class,
-        //Yajra\Datatables\DatatablesServiceProvider::class,
-        // Spatie\Permission\PermissionServiceProvider::class,
+        Laravel\Ui\UiServiceProvider::class,
         Milon\Barcode\BarcodeServiceProvider::class,
         ConsoleTVs\Charts\ChartsServiceProvider::class,
         App\Providers\DropboxServiceProvider::class,
@@ -237,5 +236,6 @@ return [
         'Charts' => ConsoleTVs\Charts\Facades\Charts::class,
         'Datatables' => Yajra\DataTables\Facades\DataTables::class,
         'Paystack' => Unicodeveloper\Paystack\Facades\Paystack::class,
+        'Menu' => Nwidart\Menus\Menu::class,
     ]
 ];

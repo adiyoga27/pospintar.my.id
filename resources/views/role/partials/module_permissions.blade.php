@@ -22,7 +22,7 @@
         <div class="checkbox">
           <label>
             {!! Form::checkbox('permissions[]', $module_permission['value'], in_array($module_permission['value'], $module_role_permissions), 
-            [ 'class' => 'input-icheck']); !!} {{ $module_permission['label'] }}
+            [ 'class' => 'input-icheck']) !!} {{ $module_permission['label'] }}
           </label>
         </div>
       </div>

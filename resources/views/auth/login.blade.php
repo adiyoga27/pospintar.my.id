@@ -128,5 +128,6 @@
            $('form#login-form').submit();
         });
     })
+
 </script>
 @endsection

@@ -27,20 +27,20 @@
             @if($model->gauge_style == 'right')
                 // Calculate warning area
                 @php
-                    $low_warning = round(0.40 * $max, 2)
-                    $warning = round(0.25 * $max, 2)
-                    $max_warning = round(0.10 * $max, 2)
+                    $low_warning = round(0.40 * $max, 2);
+                    $warning = round(0.25 * $max, 2);
+                    $max_warning = round(0.10 * $max, 2);
                 @endphp
 
                 greenColor: '#c8e6c9', yellowColor: '#ffd54f', redColor: '#e57373',
                 greenFrom: $low_warning, greenTo: $max,
                 yellowFrom: $max_warning, yellowTo: $low_warning,
                 redFrom: $min, redTo: $max_warning,
-            @elseif($model->gauge_style == 'center') {
+            @elseif($model->gauge_style == 'center')
                 // Calculate warning area
                 @php
-                    $warning = round(0.25 * $max, 2)
-                    $warning2 = round(0.75 * $max, 2)
+                    $warning = round(0.25 * $max, 2);
+                    $warning2 = round(0.75 * $max, 2);
                 @endphp
 
                 greenColor: '#c8e6c9', yellowColor: '#ffd54f', redColor: '#ffd54f',
@@ -50,9 +50,9 @@
             @else
                 // Calculate warning area
                 @php
-                    $low_warning = round(0.60 * $max, 2)
-                    $warning = round(0.75 * $max, 2)
-                    $max_warning = round(0.90 * $max, 2)
+                    $low_warning = round(0.60 * $max, 2);
+                    $warning = round(0.75 * $max, 2);
+                    $max_warning = round(0.90 * $max, 2);
                 @endphp
 
                 greenColor: '#c8e6c9', yellowColor: '#ffd54f', redColor: '#e57373',
