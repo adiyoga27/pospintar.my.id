@@ -156,7 +156,7 @@ class AppServiceProvider extends ServiceProvider
         //Blade directive to convert.
         Blade::directive('format_date', function ($date) {
             if (!empty($date)) {
-                return "\Carbon::createFromTimestamp(strtotime($date))->format(session('business.date_format'))";
+                return "\Carbon::parse($date)->format(session('business.date_format'))";
             } else {
                 return null;
             }
@@ -169,7 +169,7 @@ class AppServiceProvider extends ServiceProvider
                 if (session('business.time_format') == 24) {
                     $time_format = 'H:i';
                 }
-                return "\Carbon::createFromTimestamp(strtotime($date))->format('$time_format')";
+                return "\Carbon::parse($date)->format('$time_format')";
             } else {
                 return null;
             }
@@ -182,7 +182,7 @@ class AppServiceProvider extends ServiceProvider
                     $time_format = 'H:i';
                 }
                 
-                return "\Carbon::createFromTimestamp(strtotime($date))->format(session('business.date_format') . ' ' . '$time_format')";
+                return "\Carbon::parse($date)->format(session('business.date_format') . ' ' . '$time_format')";
             } else {
                 return null;
             }

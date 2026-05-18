@@ -290,7 +290,7 @@ class Util
             }
         }
         
-        return !empty($date) ? \Carbon::createFromTimestamp(strtotime($date))->format($format) : null;
+        return !empty($date) ? \Carbon::parse($date)->format($format) : null;
     }
 
     /**
